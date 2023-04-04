@@ -1,0 +1,4 @@
+git rm --cached .DS_Store
+.idea
+bin
+obj
