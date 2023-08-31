@@ -20,8 +20,8 @@ jobs:
       - run: dotnet build
       - name: Ensure browsers are installed
         run: | 
-          dotnet tool install --global PowerShell --version 6.2.7 
+          dotnet tool install --global PowerShell --version 7.3.6
           export PATH="$PATH:/github/home/.dotnet/tools" 
-          pwsh ./src/ZiloTech.AutomationTests.TA.UI/bin/Debug/net7.0/playwright.ps1 install --with-deps
+          pwsh ./bin/Debug/net7.0/playwright.ps1 install --with-deps
       - name: Run your tests
         run: dotnet test
